@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie List Container */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Movie Card */
+.movie-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Poster */
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Movie Details */
+.movie-details {
+    padding: 15px;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.movie-title:hover {
+    color: #0056b3;
+}
+
+.movie-overview {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.movie-release-date {
+    font-size: 0.85rem;
+    color: #888;
+}
